@@ -1,6 +1,6 @@
-cask "redline" do
-  version "0.1.0"
-  sha256 "c93df499718f60ff77571bfb18cc034c03a4d82b17647af75e035c9169877fee"
+cask "redline-app" do
+  version "0.1.1"
+  sha256 "58ab0e0d48332d3e2d0f53d29c2a67d1a88e0c12ff1a04ba1d0242df802a7e91"
 
   url "https://github.com/chountalas/Redline/releases/download/v#{version}/Redline-#{version}-arm64.dmg"
   name "Redline"
@@ -20,6 +20,6 @@ cask "redline" do
 
   zap trash: [
     "~/Library/Application Support/Redline",
-    "~/Library/Preferences/com.calesthio.Redline.plist",
+    "~/Library/Preferences/com.connorhountalas.Redline.plist",
   ]
 end

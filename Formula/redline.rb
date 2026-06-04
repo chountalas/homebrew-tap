@@ -3,8 +3,8 @@ class Redline < Formula
 
   desc "Validate commercial lease math with deterministic checks"
   homepage "https://github.com/chountalas/Redline"
-  url "https://github.com/chountalas/Redline/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "4c4983eac3561007df485869eabaca62c334958c457a0cf154994b234eff9769"
+  url "https://github.com/chountalas/Redline/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "8dc22af7392afb37d2f76e4be5f78b059c8bf209daed4911908426451c0a4f16"
   license "MIT"
   head "https://github.com/chountalas/Redline.git", branch: "main"
 
@@ -229,7 +229,7 @@ class Redline < Formula
         redline-mcp
 
       To install Redline.app into /Applications:
-        brew install --cask chountalas/tap/redline
+        brew install --cask chountalas/tap/redline-app
     EOS
   end
 
