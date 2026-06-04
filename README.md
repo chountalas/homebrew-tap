@@ -2,6 +2,12 @@
 
 Homebrew casks for Connor Hountalas apps.
 
+## Redline
+
+```bash
+brew install chountalas/tap/redline
+```
+
 ## Luma
 
 ```bash
