@@ -4,7 +4,7 @@ class Redline < Formula
   desc "Validate commercial lease math with deterministic checks"
   homepage "https://github.com/chountalas/Redline"
   url "https://github.com/chountalas/Redline/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "8dc22af7392afb37d2f76e4be5f78b059c8bf209daed4911908426451c0a4f16"
+  sha256 "24dac4c92132e26cc37928bceaf3a70ed72ab776b4abc3e609fa465f1e31b2f0"
   license "MIT"
   head "https://github.com/chountalas/Redline.git", branch: "main"
 
