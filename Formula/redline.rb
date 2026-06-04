@@ -3,14 +3,14 @@ class Redline < Formula
 
   desc "Validate commercial lease math with deterministic checks"
   homepage "https://github.com/chountalas/Redline"
-  url "https://github.com/chountalas/Redline/archive/f2c37fb97cbd1d7c870b1a22a25e4d7b3d3b921b.tar.gz"
-  version "0.1.0"
-  sha256 "bf0cc65473f98b5fd6653b5b98bd253ac05d5770f56c5aac15fb0c8968feb005"
+  url "https://github.com/chountalas/Redline/archive/refs/tags/v0.1.0.tar.gz"
+  sha256 "4c4983eac3561007df485869eabaca62c334958c457a0cf154994b234eff9769"
   license "MIT"
   head "https://github.com/chountalas/Redline.git", branch: "main"
 
   livecheck do
-    skip "No tagged Redline releases yet"
+    url :stable
+    strategy :github_latest
   end
 
   depends_on arch: :arm64
@@ -205,9 +205,6 @@ class Redline < Formula
   def install
     virtualenv_create(libexec, "python3.13")
 
-    pyproject = buildpath/"pyproject.toml"
-    File.write(pyproject, pyproject.read.gsub("  \"openai>=2.8.0\",\n", ""))
-
     resources.each do |r|
       r.stage do
         target = r.url.end_with?(".whl") ? Pathname.pwd/r.downloader.basename : Pathname.pwd
@@ -231,9 +228,8 @@ class Redline < Formula
         redline
         redline-mcp
 
-      It does not install Redline.app into /Applications. Until a signed cask is
-      published, build and install the Mac app from a source checkout with:
-        ./script/build_and_run.sh --install
+      To install Redline.app into /Applications:
+        brew install --cask chountalas/tap/redline
     EOS
   end
 
