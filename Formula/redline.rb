@@ -6,6 +6,7 @@ class Redline < Formula
   url "https://github.com/chountalas/Redline/archive/refs/tags/v0.1.1.tar.gz"
   sha256 "24dac4c92132e26cc37928bceaf3a70ed72ab776b4abc3e609fa465f1e31b2f0"
   license "MIT"
+  revision 1
   head "https://github.com/chountalas/Redline.git", branch: "main"
 
   livecheck do
@@ -20,6 +21,11 @@ class Redline < Formula
   resource "annotated-types" do
     url "https://files.pythonhosted.org/packages/78/b6/6307fbef88d9b5ee7421e68d78a9f162e0da4900bc5f5793f6d3d0e34fb8/annotated_types-0.7.0-py3-none-any.whl"
     sha256 "1f02e8b43a8fbbc3f3e0d4f0f4bfc8131bcb4eebe8849b8e5c773f3a1c582a53"
+  end
+
+  resource "anthropic" do
+    url "https://files.pythonhosted.org/packages/b8/12/d9ab42790494d7c428391a46cd28492395566a6a8ccb138d681978594455/anthropic-0.104.1-py3-none-any.whl"
+    sha256 "35c8cb456f5a4405aafe1f10f03f6fcc54fa51fa8ec01d655cc4b437d120e9b7"
   end
 
   resource "anyio" do
@@ -57,6 +63,16 @@ class Redline < Formula
     sha256 "0c558d2cdffd8f4bbb30fc7134c74d2ca9a476f830bb053074498fbc86f41ed6"
   end
 
+  resource "distro" do
+    url "https://files.pythonhosted.org/packages/12/b3/231ffd4ab1fc9d679809f356cebee130ac7daa00d6d6f3206dd4fd137e9e/distro-1.9.0-py3-none-any.whl"
+    sha256 "7bffd925d65168f85027d8da9af6bddab658135b840670a223589bc0c8ef02b2"
+  end
+
+  resource "docstring-parser" do
+    url "https://files.pythonhosted.org/packages/a7/5f/ed01f9a3cdffbd5a008556fc7b2a08ddb1cc6ace7effa7340604b1d16699/docstring_parser-0.18.0-py3-none-any.whl"
+    sha256 "b3fcbed555c47d8479be0796ef7e19c2670d428d72e96da63f3a40122860374b"
+  end
+
   resource "h11" do
     url "https://files.pythonhosted.org/packages/04/4b/29cac41a4d98d144bf5f6d33995617b185d14b22401f75ca86f384e87ff1/h11-0.16.0-py3-none-any.whl"
     sha256 "63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86"
@@ -82,6 +98,11 @@ class Redline < Formula
     sha256 "7f952cbe720b688055e3f87de14f5c3e5fdaa8bc3928985c4077ca689de849a2"
   end
 
+  resource "jiter" do
+    url "https://files.pythonhosted.org/packages/86/59/db537c0949e83668c38481d426b9f2fd5ab758c4ee53a811dd0a510626a0/jiter-0.15.0-cp313-cp313-macosx_11_0_arm64.whl"
+    sha256 "d1e7b1776f0797956c509e123d0952d10d293a9492dea9f288ab9570ec01d1a5"
+  end
+
   resource "jsonschema" do
     url "https://files.pythonhosted.org/packages/69/90/f63fb5873511e014207a475e2bb4e8b2e570d655b00ac19a9a0ca0a385ee/jsonschema-4.26.0-py3-none-any.whl"
     sha256 "d489f15263b8d200f8387e64b4c3a75f06629559fb73deb8fdfb525f2dab50ce"
@@ -95,6 +116,11 @@ class Redline < Formula
   resource "mcp" do
     url "https://files.pythonhosted.org/packages/c9/11/252c6f971dc4f16af1d98a1c469d8ba523aab00d1bb76b4d3bc1ff32eacc/mcp-1.27.2-py3-none-any.whl"
     sha256 "d6ff5160c6ca65d93013626efb3fc249de683c30b2d8570755ceddd490344de5"
+  end
+
+  resource "openai" do
+    url "https://files.pythonhosted.org/packages/0a/bf/ccff9be562e24207716d04ef9dc931c76aff0c89a7265da43e2104d7fe06/openai-2.38.0-py3-none-any.whl"
+    sha256 "ec6661c57b2dcc47414a767e6e3335c7ed3d19c9696999283a3c82e95c756a3c"
   end
 
   resource "pdfminer-six" do
@@ -177,6 +203,11 @@ class Redline < Formula
     sha256 "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274"
   end
 
+  resource "sniffio" do
+    url "https://files.pythonhosted.org/packages/e9/44/75a9c9421471a6c4805dbf2356f7c181a29c1879239abab1ea2cc8f38b40/sniffio-1.3.1-py3-none-any.whl"
+    sha256 "2f6da418d1f1e0fddd844478f41680e794e6051915791a034ff65e5f100525a2"
+  end
+
   resource "sse-starlette" do
     url "https://files.pythonhosted.org/packages/dc/67/805710444ea8cc75fbf70b920ed431a560c4bf9c57f7d5a3117213189399/sse_starlette-3.4.4-py3-none-any.whl"
     sha256 "3f4dd50d8aed2771a091f3a83000323fc3844541c16b4fe585ae2420cc6df973"
@@ -185,6 +216,11 @@ class Redline < Formula
   resource "starlette" do
     url "https://files.pythonhosted.org/packages/1c/54/196d0c1db10af76baa4f64894448505d60d3cdf70ef92cbb35f46a4e4c71/starlette-1.2.1-py3-none-any.whl"
     sha256 "4de0082d08c8f6764a85a54cf1120d6939507a19905c7768acad2a9f875d2b89"
+  end
+
+  resource "tqdm" do
+    url "https://files.pythonhosted.org/packages/16/e1/3079a9ff9b8e11b846c6ac5c8b5bfb7ff225eee721825310c91b3b50304f/tqdm-4.67.3-py3-none-any.whl"
+    sha256 "ee1e4c0e59148062281c49d80b25b67771a127c85fc9676d3be5f243206826bf"
   end
 
   resource "typing-extensions" do
@@ -228,6 +264,8 @@ class Redline < Formula
         redline
         redline-mcp
 
+      Provider adapters for Codex, Ollama, OpenAI, and Anthropic are included.
+
       To install Redline.app into /Applications:
         brew install --cask chountalas/tap/redline-app
     EOS
@@ -236,6 +274,11 @@ class Redline < Formula
   test do
     assert_match version.to_s, shell_output("#{bin}/redline --version")
     assert_match "check a lease PDF", shell_output("#{bin}/redline --help")
-    system libexec/"bin/python", "-c", "import mcp.server.fastmcp, redline.mcp_server"
+    system libexec/"bin/python", "-c", <<~PYTHON
+      import anthropic
+      import mcp.server.fastmcp
+      import openai
+      import redline.mcp_server
+    PYTHON
   end
 end
