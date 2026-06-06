@@ -3,8 +3,8 @@ class Redline < Formula
 
   desc "Validate commercial lease math with deterministic checks"
   homepage "https://github.com/chountalas/Redline"
-  url "https://github.com/chountalas/Redline/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "24dac4c92132e26cc37928bceaf3a70ed72ab776b4abc3e609fa465f1e31b2f0"
+  url "https://github.com/chountalas/Redline/archive/refs/tags/v0.1.2.tar.gz"
+  sha256 "45521dade584d3627d48f980b5b0e64b100f2fdef421d3800905186ba86e5817"
   license "MIT"
   head "https://github.com/chountalas/Redline.git", branch: "main"
 
@@ -228,6 +228,8 @@ class Redline < Formula
         redline
         redline-mcp
 
+      Provider adapters for Codex, Ollama, OpenAI, and Anthropic are included.
+
       To install Redline.app into /Applications:
         brew install --cask chountalas/tap/redline-app
     EOS
@@ -236,6 +238,12 @@ class Redline < Formula
   test do
     assert_match version.to_s, shell_output("#{bin}/redline --version")
     assert_match "check a lease PDF", shell_output("#{bin}/redline --help")
-    system libexec/"bin/python", "-c", "import mcp.server.fastmcp, redline.mcp_server"
+    system libexec/"bin/python", "-c", <<~PYTHON
+      import mcp.server.fastmcp
+      import redline.mcp_server
+      from redline.llm import _create_anthropic_client, _create_openai_client
+      _create_anthropic_client(api_key="test")
+      _create_openai_client(api_key="test")
+    PYTHON
   end
 end
