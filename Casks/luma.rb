@@ -1,6 +1,6 @@
 cask "luma" do
-  version "0.1.8"
-  sha256 "59f1dc2b87589e1a5eeb34a66301b065756422a9ce75c721c845e5d1933db65f"
+  version "0.1.9"
+  sha256 "36b72d1cd93934ad6abf94fdb79294f06da7924f1ad7feab9df9d8e98c5a7a52"
 
   url "https://github.com/chountalas/Luma/releases/download/v#{version}/Luma-#{version}-arm64.dmg"
   name "Luma"
