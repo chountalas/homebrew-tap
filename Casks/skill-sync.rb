@@ -1,6 +1,6 @@
 cask "skill-sync" do
-  version "0.1.1"
-  sha256 "a91b2274edcef9308cb05cee7a37a0b3ca326f23fb658c5c73df34a340ccaeee"
+  version "0.1.2"
+  sha256 "3f78045e7ce05506582931225d5efe39b9deaab8f1ea49faf447150e4c050189"
 
   url "https://github.com/chountalas/Skill-Sync/releases/download/v#{version}/Skill-Sync-#{version}-arm64.dmg"
   name "Skill Sync"
