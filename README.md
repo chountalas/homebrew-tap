@@ -34,3 +34,15 @@ Update later with:
 ```bash
 brew upgrade --cask luma
 ```
+
+## Skill Sync
+
+```bash
+brew install --cask chountalas/tap/skill-sync
+```
+
+Update later with:
+
+```bash
+brew upgrade --cask skill-sync
+```
