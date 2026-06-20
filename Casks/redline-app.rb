@@ -1,6 +1,6 @@
 cask "redline-app" do
-  version "0.1.1"
-  sha256 "58ab0e0d48332d3e2d0f53d29c2a67d1a88e0c12ff1a04ba1d0242df802a7e91"
+  version "0.1.3"
+  sha256 "70588e042e31da68be0a942c03120aa0aec8da0707ce1630bb2f7fe7f867efd3"
 
   url "https://github.com/chountalas/Redline/releases/download/v#{version}/Redline-#{version}-arm64.dmg"
   name "Redline"
