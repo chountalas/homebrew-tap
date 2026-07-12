@@ -1,6 +1,6 @@
 cask "tally" do
-  version "0.1.3"
-  sha256 "141b24f59daad39cdcfbf29f9cd730f272111102d3c6fe26fd508025990c36d6"
+  version "0.1.4"
+  sha256 "1ea05d236f05a29b77fe372f5f15eafba5a3a5e743cd2bd5a2d6c9819364f919"
 
   url "https://github.com/chountalas/tally/releases/download/v#{version}/Tally-#{version}-arm64.dmg"
   name "Tally"
